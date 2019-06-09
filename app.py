@@ -167,4 +167,4 @@ def update_text(query,clicks):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True,port=5555)
+    app.run_server()
