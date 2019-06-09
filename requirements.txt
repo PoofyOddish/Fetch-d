@@ -11,4 +11,5 @@ decorator==4.4.0
 numpy
 pandas
 requests==2.22.0
+gunicorn
 
