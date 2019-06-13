@@ -173,7 +173,7 @@ def update_query(n_clicks, animal_type, gender_value,zipcode):
             query_string = query_string+key+"="+values+"&"
 
     # Pull 50 animal results based on user dropdowns
-    get_animals = requests.get(BASE+f"animals?organization={org_list}&{query_string}limit=10",headers={"Authorization":"Bearer "+oath.json()['access_token']})
+    get_animals = requests.get(BASE+f"animals?organization={org_list}&{query_string}limit=50",headers={"Authorization":"Bearer "+oath.json()['access_token']})
 
     # Remove any entries from pet query results that are missing photos
     cleaned_animals = []
