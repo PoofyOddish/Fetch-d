@@ -279,4 +279,4 @@ def update_table(query, clicks):
 
 # Run server
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
